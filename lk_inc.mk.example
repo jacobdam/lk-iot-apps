@@ -1,0 +1,18 @@
+# copy this to lk_inc.mk and customize according to your setup
+
+# the top level directory that all paths are relative to
+LKMAKEROOT := ..
+
+# paths relative to LKMAKEROOT where additional modules should be searched
+LKINC := lk-iot-apps
+
+# the path relative to LKMAKEROOT where the main lk repository lives
+LKROOT := lk
+
+# set the directory relative to LKMAKEROOT where output will go
+BUILDROOT := ${LKINC}
+
+# set the default project if no args are passed
+DEFAULT_PROJECT ?= blink
+
+#TOOLCHAIN_PREFIX := <relative path to toolchain>

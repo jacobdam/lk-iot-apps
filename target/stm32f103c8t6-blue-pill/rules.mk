@@ -1,0 +1,19 @@
+LOCAL_DIR := $(GET_LOCAL_DIR)
+
+MODULE := $(LOCAL_DIR)
+
+STM32_CHIP := stm32f103_md
+
+PLATFORM := stm32f1xx
+
+MODULE_SRCS += \
+	$(LOCAL_DIR)/init.c
+
+GLOBAL_DEFINES += \
+	ENABLE_UART1=1 \
+	HSE_VALUE=8000000 \
+	PLL_M_VALUE=8 \
+	PLL_N_VALUE=336 \
+	PLL_P_VALUE=2
+
+include make/module.mk
