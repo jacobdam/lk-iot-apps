@@ -10,7 +10,6 @@ Depends on what the project you build. The default project (blink) requires this
 
 - Development board: SMT32F103C8T6 Cortex M3 Blue Pill board
 - Programmer: ST-Link V2
-- Some
 
 **Software**
 
@@ -25,7 +24,7 @@ brew install arm-gcc-bin
 brew install stlink
 ```
 
-### Setup and build
+## Setup and build
 
 ```
 mkdir lk_root
@@ -39,3 +38,6 @@ make blink-led
 
 Read [LK wiki](https://github.com/littlekernel/lk/wiki) for more information.
 
+## License
+
+MIT
